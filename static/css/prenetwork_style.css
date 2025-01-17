@@ -1,0 +1,55 @@
+#maindiv {
+    border-top: 2px solid black;
+
+}
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#datadiv {
+    margin:1vh 30vw 10vh 30vw;
+}
+
+#networkdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#headingcreate{
+    font-size:larger;
+    margin-right: 2vw;
+}
+#createnetwork {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#or {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+
+}
+#enternetworkheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#enternetwork {
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

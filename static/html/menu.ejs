@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connections</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/menu_style.css">
+</head>
+
+<body>
+    <!-- menu will be a simple connection window -->
+
+    <!-- headerdiv -->
+    <!-- myProfile -->
+    <!-- switchmode -->
+    <!-- maindiv -->
+    <!-- userwindow -->
+    <!-- searcharea -->
+    <!-- searchtext -->
+    <!-- submitsearch -->
+    <!-- foundusers -->
+    <!-- multiple users div -->
+    <!-- messagewindow -->
+    <!-- messagehead -->
+    <!-- username -->
+    <!-- info -->
+    <!-- messagecontent -->
+    <!-- receivedContent -->
+    <!-- sentContent -->
+    <!-- usertext -->
+    <!-- usertextarea -->
+    <!-- submittext -->
+    <div id="ejsuniqueid" style="display: none;">
+        <%=ejsuniqueid%>
+    </div>
+    <div id="headerdiv">
+        <div class="profilediv">
+            <div class="headerdiv-item" id="myprofile"></div>
+            <div id="myusername">
+                <%=ejsusername %>
+            </div>
+
+        </div>
+        <div id="formdiv1">
+            <form action="/predark" method="post">
+                <input id="dusernameinfo" type="text" value="<%=ejsusername%>" style="display: none;" name="usernameinfo"></input>
+                <input id="duniqueidinfo" type="text" value="<%=ejsuniqueid%>" style="display: none;" name="uniqueidinfo"></input>
+                <div class="headerdiv-item" id="switchmode">
+                    <button class="mode-darkwindow" type="submit">Dark window</button>
+                </div>
+            </form>
+            <form action="/prenetwork" method="post">
+                <input id="nusernameinfo" type="textarea" style="display: none;" name="usernameinfo"></input>
+                <input id="nuniqueidinfo" type="textarea" style="display: none;" name="uniqueidinfo"></input>
+                <div class="headerdiv-item" id="switchmode">
+                    <button class="mode-network" type="submit">Network</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="maindiv">
+        <div class="maindiv-item" id="userwindow">
+            <div class="searcharea">
+                <input id="searchtext" placeholder="Search users worldwide through user id">
+
+                </input>
+                <div id="submitsearch">
+
+                </div>
+            </div>
+            <div id="foundusers">
+
+            </div>
+        </div>
+        <div class="maindiv-item" id="messagewindow">
+            <div class="messagewindow-item" id="messagehead">
+                <div id="usernamediv">
+
+                </div>
+                <div id="infodiv">
+
+                </div>
+            </div>
+            <div class="messagewindow-item" id="messagecontent">
+                <!-- <div class="receivedcontent">User1 : This is a received message at left
+                    <div class="timeofmsg">12:00</div>
+                </div>
+                <div class="dateofmsg">24/12/2024</div>
+                <div class="sentcontent">You : This is a sent message at right
+                    <div class="timeofmsg">12:00</div>
+                </div> -->
+            </div>
+            <form id="formofsubmit">
+                <div class="messagewindow-item" id="usertext">
+                    <input type="text" id="usertextarea" placeholder="Type your message here">
+                    <button id="submittext" type="submit"></button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="http://127.0.0.1:8000/socket.io/socket.io.js"></script>
+    <script src="../js/menu_script.js"></script>
+
+</body>
+
+</html>

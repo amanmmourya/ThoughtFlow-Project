@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre Dark window</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/predarkwindow_style.css">
+</head>
+
+<body>
+    <h2>Dark Window Mode</h2>
+
+    <div id="maindiv">
+        
+        <div id="networkdiv">
+            <div id="createnetwork">
+                <div id="headingcreate">Create a Dark Window:</div>
+                <form action="/cdark" method="post">
+                    <input type="text" name="myusername" value="<%=rusername%>" style="display: none;">
+                    <input type="text" name="myuniqueid" value="<%=runiqueid%>" style="display: none;">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Admin's Unique Id</label>
+                        <input type="text" name="cadminid" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Dark Id</label>
+                        <input type="text" name="cdarkid" class="form-control" id="exampleInputPassword1">
+                        <div id="emailHelp" class="form-text">We'll never share your details with anyone else.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Create and Navigate to Dark</button>
+                </form>
+            </div>
+            <div id="or">OR</div>
+            <div id="enternetwork">
+                <form class="row g-3" action="/edark" method="post">
+                    <input type="text" name="myusername" value="<%=rusername%>" style="display: none;">
+                    <input type="text" name="myuniqueid" value="<%=runiqueid%>" style="display: none;">
+                    <div class="col-auto" id="enternetworkheading">
+                        Enter your Dark Id :
+                    </div>
+                    <div class="col-auto">
+                        <input type="password" name="darkid" class="form-control" id="inputPassword2" placeholder="Dark Id">
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-3">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/network_style.css">
+</head>
+
+<body>
+    <!-- menu will be a simple connection window -->
+
+    <!-- headerdiv -->
+    <!-- myProfile -->
+    <!-- switchmode -->
+    <!-- maindiv -->
+    <!-- userwindow -->
+    <!-- searcharea -->
+    <!-- searchtext -->
+    <!-- submitsearch -->
+    <!-- foundusers -->
+    <!-- multiple users div -->
+    <!-- messagewindow -->
+    <!-- messagehead -->
+    <!-- username -->
+    <!-- info -->
+    <!-- messagecontent -->
+    <!-- receivedContent -->
+    <!-- sentContent -->
+    <!-- usertext -->
+    <!-- usertextarea -->
+    <!-- submittext -->
+    <div id="headerdiv">
+        <div class="headerprofile">
+            <div class="headerdiv-item" id="myprofile"></div>
+            <div id="myusername">
+                <%=myusername%>
+            </div>
+            <div id="myuniqueid" style="display: none;">
+                <%=myuniqueid%>
+            </div>
+            <div id="networkname" style="display: none;">
+                <%=networkname%>
+            </div>
+            <div id="networkid" style="display: none;">
+                <%=networkid%>
+            </div>
+        </div>
+        <div class="headerdiv-item" id="switchmode">
+            <div class="mode-darkwindow"><a href="/" id="homea">Home</a></div>
+        </div>
+    </div>
+    <div id="maindiv">
+        <div class="maindiv-item" id="messagewindow">
+            <div class="messagewindow-item" id="messagehead">
+                <div id="groupnamediv">
+                    <%=networkname%>
+                </div>
+                <div id="infodiv">
+
+                </div>
+            </div>
+            <div class="messagewindow-item" id="messagecontent">
+                <!-- <div class="receivedcontent">User1 : This is a received message at left
+                    <div class="timeofmsg">12:00</div>
+                </div>
+                <div class="dateofmsg">24/12/2024</div>
+                <div class="sentcontent">You : This is a sent message at right
+                    <div class="timeofmsg">12:00</div>
+                </div> -->
+            </div>
+            <form id="submitusertextform">
+                <div class="messagewindow-item" id="usertext">
+                    <input type="text" id="usertextarea" placeholder="Type your message here">
+                    <button type="submit" id="submittext"></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="http://127.0.0.1:8000/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../js/network_script.js"></script>
+</body>
+
+</html>

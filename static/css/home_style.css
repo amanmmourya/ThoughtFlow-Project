@@ -1,0 +1,148 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    background-color: rgb(245, 245, 245);
+    margin-bottom: 5px;
+}
+
+#nb-logo {
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: x-large;
+
+}
+#signina{
+    all: unset;
+}
+#signin {
+    color: black;
+    border-radius: 20px;
+}
+.signupa{
+    all: unset;
+}
+#signup {
+    margin-left: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+}
+
+.contentBelowNB {
+    background-image: linear-gradient(to right, #f9e4f0, #d9f4f0, #e7f3f9, #f9e7d9);
+    /* background-image: linear-gradient(to right, #a0c4e7, #f8c8dc, #ffffff); */
+
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.belowNB1 {
+    color: rgb(40, 40, 40);
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-item {
+
+    height: 40vh;
+    width: 25vw;
+    margin: 20px;
+    border-radius: 10%;
+
+}
+
+#darkwindow {
+    background-image: url('../img/darkwindowr.jpg');
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+#network {
+    background-image: url('../img/networkr.jpg');
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+#connections {
+    background-image: url('../img/connectionsr.webp');
+    background-size: cover;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+#darkwindow:hover,
+#network:hover,
+#connections:hover,
+.btn:hover{
+    transform: scale(1.05);
+}
+
+.nav-link:hover,.nav-item:hover{
+
+    font-weight: 600;
+}
+.contentBelowNB {
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 3s forwards; /* 3-second fade-in effect */
+    font-size: 36px;
+    text-align: center;
+    color: #4CAF50; /* Green color for emphasis */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.grid-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.grid-title-item {
+
+    height: 8vh;
+    width: 25vw;
+    margin: 0px 20px 0px 20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 400;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.left-f-item,.right-f-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 120px 0px 120px;
+}
+.footer-item{
+    margin: 0px 20px 0px 20px;
+}

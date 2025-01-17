@@ -1,0 +1,221 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #ffffff;
+}
+#ahome{
+    all: unset;
+}
+#headerdiv {
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+}
+#insideheaderdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#myusernamediv{
+    font-size: x-large;
+    font-weight: 700;
+}
+#myprofile {
+    /* border: 2px solid black; */
+    height: 6vh;
+    width: 3vw;
+    margin-left: 1vw;
+    background-image: url('../img/myprofile.jpg');
+    background-size: contain;
+}
+
+#switchmode {
+    
+    height: 5vh;
+    width: 20vw;
+    margin-right: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode-darkwindow{
+    cursor: pointer;
+    border: 1px solid rgb(52, 51, 51);
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+    padding: 2px 5px 2px 5px;
+    margin-bottom: 2px;
+
+}
+.mode-network{
+    cursor: pointer;
+    margin-left: 1vw;
+    border: 1px solid rgb(52, 51, 51);
+    border-radius: 5px;
+    background-color:white;
+    color: black;
+    font-size: larger;
+    font-weight: 600;
+    padding: 5px;
+    margin-bottom: 2px;
+
+}
+
+#maindiv {
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#userwindow {
+    height: 93vh;
+    width: 35vw;
+}
+
+#searchtext {
+    width: 25vw;
+    height: 6vh;
+    margin: 1vw;
+    border-radius: 25px;
+    padding-left: 10px;
+    border-color: white;
+    border-width: 3px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background-color: rgb(255, 251, 242);
+}
+
+#submitsearch {
+    height: 6vh;
+    width: 3vw;
+    border-radius: 50%;
+    background-image: url('../img/searchbtn.webp');
+    background-size: contain;
+}
+
+#messagewindow {
+    height: 93vh;
+    width: 99vw;
+}
+
+.searcharea {
+    margin: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: #beafd2;
+}
+
+.foundusers {
+    height: 50vh;
+    background-color: #beafd2;
+    margin: 2px;
+    border-radius: 10px;
+}
+
+#messagehead {
+    margin: 2px 2px 2px 0px;
+    height: 10.2vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1a4050;
+}
+
+#infodiv {
+    height: 8vh;
+    width: 3.8vw;
+    margin-right: 1vw;
+    background-image: url('../img/myinfo.jpg');
+    border-radius: 50%;
+    background-size: contain;
+}
+
+#usernamediv {
+    color: white;
+    width: 20vw;
+    height: 9vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 600;
+}
+
+#messagecontent {
+    height: 70vh;
+    overflow-y: auto;
+    background-color: rgb(21, 21, 21);
+}
+
+.receivedcontent {
+    margin: 5px;
+    font-size: larger;
+    float: left;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(77, 245, 77);
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+.dateofmsg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clear: both;
+    font-weight: 700;
+}
+.timeofmsg{
+    font-size: small;
+}
+.sentcontent {
+    margin: 5px;
+    font-size: larger;
+    float: right;
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(77, 245, 77);
+    padding: 10px;
+    border-radius: 10px;
+
+
+}
+
+#usertext {
+    height: 13vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(50, 50, 50);
+    margin: 2px;
+}
+#usertextarea{
+    border: 2px solid white;
+    height: 8vh;
+    width: 40vw;
+    border-radius: 35px;
+    padding-left: 10px;
+    font-size: larger;
+    box-shadow: 6px 6px 10px rgb(0, 0, 0,0.3);
+    background-color:rgb(186, 255, 233);
+}
+#submittext{
+    all: unset;
+    height:10vh;
+    width: 5vw;
+    margin-left: 1vw;
+    background-image: url('../img/sendbtn.png');
+    background-size: contain;
+}

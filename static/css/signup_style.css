@@ -1,0 +1,39 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: #f2f4f7;
+}
+#submita{
+    all: unset;
+}
+.formdiv{
+    height: 60vh;
+    width: 40vw;
+    border: 2px solid rgb(39, 39, 39);
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+.welcome{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: #0D6EFD;
+}
+.signupmsg{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-weight: 600;
+}
+.continuebtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
